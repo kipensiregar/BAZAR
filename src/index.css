@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Thermal Receipt Print Styles */
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Hide everything on the app during printing */
+  #root > *:not(#printable-receipt-container) {
+    display: none !important;
+  }
+
+  /* Make sure the receipt container is visible and positioned at top */
+  #printable-receipt-container {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  /* Remove shadows and backgrounds for thermal clarity */
+  #printable-receipt-container * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+

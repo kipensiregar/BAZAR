@@ -1,0 +1,6 @@
+{
+  "name": "Kasir Bazar",
+  "description": "Aplikasi kasir (POS) responsif untuk iPad saat bazar dan acara, dilengkapi fitur cetak struk printer thermal 58mm/80mm, pencatatan transaksi offline, dan kalkulator kembalian cepat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
